@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <!-- Origin Trial Token, feature = WebUSB (For Chrome M57+), origin = https://webusb.github.io, expires = 2017-06-19 -->
-    <meta http-equiv="origin-trial" data-feature="WebUSB (For Chrome M57+)" data-expires="2017-06-19" content="Ag83MurQOa5N4SKRCqqtSlbycfe08s5LgUiqEI7J3jTk2NEIpRp7SLPz2i+EBDuXyf+AeRMdD6BI++kTSJmGzQEAAABReyJvcmlnaW4iOiJodHRwczovL3dlYnVzYi5naXRodWIuaW86NDQzIiwiZmVhdHVyZSI6IldlYlVTQjIiLCJleHBpcnkiOjE0OTc4OTM2OTV9">
-    <title>LED</title>
-    <script src="js/serial.js"></script>
-    <script src="js/led.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AmbientLightSensor</title>
   </head>
   <body>
+    <p id="error"></p>
+    <p id="permission"></p>
+    <p id="reading"></p>
+    
     <p>
       <button id="connect">Connect</button> <span id="status"></span>
     </p>
-    <button id="led">LED</button>
-
+    <script src="js/light.js"></script>
+    <script src="js/serial.js></script>
   </body>
 </html>
